@@ -5,19 +5,19 @@ class Swarm < Formula
   desc "Local dev CLI for kubeswarm - run LLM agent pipelines without a cluster"
   homepage "https://kubeswarm.io"
   license "Apache-2.0"
-  version "0.1.0-alpha.1"
+  version "0.1.0-alpha.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.1/swarm-darwin-arm64"
-      sha256 "a11259a36ff8c3f71fad908e6c17cea1a5c85ce0ca600bb1a666c86a0726775a"
+      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.2/swarm-darwin-arm64"
+      sha256 "0039f28a7ec1913c9f88a5c099c4ce693bedecbbefad31efbd8a0f2f85c3404c"
 
       def install
         bin.install "swarm-darwin-arm64" => "swarm"
       end
     else
-      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.1/swarm-darwin-amd64"
-      sha256 "8e47f1975bf82e0a7f6ef0269f903c0e9a7073e2540ba3a0a3234b6a5421d123"
+      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.2/swarm-darwin-amd64"
+      sha256 "f100fac78de96324377885b467044a1533e5c1c9e68d8ef9e45f4eaeedd0f1cb"
 
       def install
         bin.install "swarm-darwin-amd64" => "swarm"
@@ -27,15 +27,15 @@ class Swarm < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.1/swarm-linux-arm64"
-      sha256 "3c5eda20dc1ae35345925d1475e77c9b4fbd6c1c1e6e8ae0c25885ddb4cad4a5"
+      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.2/swarm-linux-arm64"
+      sha256 "533b0fa60fdff0cc8901125f67f71b426d340a3227e15d9f42a061d0ec4d6417"
 
       def install
         bin.install "swarm-linux-arm64" => "swarm"
       end
     else
-      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.1/swarm-linux-amd64"
-      sha256 "706593293c418317ee497284f99adca4747fba89b1d2569e38382390d836cdd2"
+      url "https://github.com/kubeswarm/kubeswarm-cli/releases/download/v0.1.0-alpha.2/swarm-linux-amd64"
+      sha256 "a0345c688958091aac00c1f261c4527afec63add160531fad2579a2f778a944f"
 
       def install
         bin.install "swarm-linux-amd64" => "swarm"
